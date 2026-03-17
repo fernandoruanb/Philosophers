@@ -22,6 +22,7 @@
   <img src="https://img.shields.io/badge/Language-C-00599C?style=for-the-badge&logo=c" alt="Language C">
   <img src="https://img.shields.io/badge/Concept-Multithreading-blueviolet?style=for-the-badge" alt="Multithreading">
   <img src="https://img.shields.io/badge/Synchronization-Mutex-orange?style=for-the-badge" alt="Mutex">
+  <img src="https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge" alt="Status Completed">
 </p>
 
 <p align="center">
