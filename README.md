@@ -257,6 +257,118 @@ Then:
 
 This demonstrates how **timing precision is critical**.
 
+Perfeito — essa demonstração é **excelente**, porque mostra o comportamento real com **argumento de refeições**, algo que muitos READMEs ignoram (e isso te diferencia).
+
+---
+
+### Example — Meal Limitation (Optional Argument)
+
+```bash
+./philo 8 800 200 200 2
+````
+
+In this example:
+
+* 8 philosophers are created
+* each one must eat **2 times**
+* the program ends automatically once all philosophers complete the required meals
+
+### Execution Output
+
+```bash
+0 Philo 1 is thinking
+0 Philo 1 has taken a fork
+0 Philo 1 has taken a fork
+0 Philo 1 is eating
+0 Philo 2 is thinking
+0 Philo 4 is thinking
+0 Philo 4 has taken a fork
+0 Philo 4 has taken a fork
+0 Philo 4 is eating
+0 Philo 5 is thinking
+0 Philo 5 has taken a fork
+1 Philo 6 is thinking
+1 Philo 3 is thinking
+1 Philo 7 is thinking
+1 Philo 7 has taken a fork
+1 Philo 7 has taken a fork
+1 Philo 7 is eating
+1 Philo 8 is thinking
+200 Philo 1 is sleeping
+200 Philo 2 has taken a fork
+200 Philo 2 has taken a fork
+200 Philo 2 is eating
+201 Philo 5 has taken a fork
+201 Philo 3 has taken a fork
+201 Philo 4 is sleeping
+201 Philo 5 is eating
+201 Philo 8 has taken a fork
+201 Philo 8 has taken a fork
+201 Philo 8 is eating
+201 Philo 7 is sleeping
+400 Philo 2 is sleeping
+400 Philo 1 is thinking
+400 Philo 1 has taken a fork
+400 Philo 3 has taken a fork
+400 Philo 3 is eating
+401 Philo 5 is sleeping
+401 Philo 6 has taken a fork
+401 Philo 6 has taken a fork
+401 Philo 6 is eating
+401 Philo 1 has taken a fork
+401 Philo 1 is eating
+401 Philo 8 is sleeping
+401 Philo 7 is thinking
+401 Philo 7 has taken a fork
+401 Philo 4 is thinking
+401 Philo 4 has taken a fork
+401 Philo 4 has taken a fork
+401 Philo 4 is eating
+600 Philo 2 is thinking
+600 Philo 2 has taken a fork
+601 Philo 3 is sleeping
+601 Philo 2 has taken a fork
+601 Philo 2 is eating
+601 Philo 5 is thinking
+601 Philo 5 has taken a fork
+601 Philo 8 is thinking
+601 Philo 8 has taken a fork
+601 Philo 8 has taken a fork
+601 Philo 8 is eating
+601 Philo 6 is sleeping
+601 Philo 7 has taken a fork
+601 Philo 7 is eating
+602 Philo 5 has taken a fork
+602 Philo 5 is eating
+801 Philo 3 is thinking
+801 Philo 3 has taken a fork
+801 Philo 3 has taken a fork
+801 Philo 3 is eating
+801 Philo 6 is thinking
+801 Philo 6 has taken a fork
+801 Philo 6 has taken a fork
+801 Philo 6 is eating
+```
+
+### Insight
+
+This execution demonstrates an important behavior:
+
+* philosophers operate **concurrently**
+* actions are **interleaved**
+* ordering is **not deterministic**
+* synchronization ensures correctness despite concurrency
+
+Most importantly:
+
+> The simulation **ends naturally**, without deaths, once all philosophers complete their required number of meals.
+
+This proves that the system correctly handles:
+
+* synchronization
+* resource sharing
+* termination conditions
+
 ---
 
 ## Team
