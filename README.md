@@ -4,8 +4,7 @@
 </p>
 
 <h1 align="center">
-  <br>
-  <a href="https://github.com/SEU_USUARIO/philosophers">
+  <a href="https://github.com/fernandoruanb/Philosophers/">
     <img src="https://github.com/ayogun/42-project-badges/raw/main/badges/philosopherse.png" alt="Philosophers badge" width="200">
   </a>
   <br>
